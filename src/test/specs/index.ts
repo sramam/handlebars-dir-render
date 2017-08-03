@@ -35,7 +35,6 @@ describe(`handlebars-dir-render`, function () {
     it(`${fixture.title}`, async () => {
       const dst = (tmp.dirSync({ postfix: `${fixture.title.split(' ').join('-')}` })).name;
       await render(fixture.source, dst, context, fixture.filter, fixture.opts);
-      console.log(`rendered \n> ${fixture.expected}\n> ${dst}`);
       const result = compareSync(
         fixture.expected,
         dst,
