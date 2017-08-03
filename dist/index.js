@@ -16,7 +16,6 @@ const path = require("path");
 const fs = require("fs");
 const mkdirp = require("mkdirp");
 const lodash_1 = require("lodash");
-;
 exports.render = (srcDir, dstDir, context, filter = null, options = null) => __awaiter(this, void 0, void 0, function* () {
     const hb = options.handlebars || Handlebars;
     const hbOpts = lodash_1.merge({}, options.hb_options);

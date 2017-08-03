@@ -17,7 +17,7 @@ export interface Options {
 export interface File {
   path: string;
   stats: any;
-};
+}
 
 /**
  * Renders template files from srcDir to dstDir.
