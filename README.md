@@ -36,17 +36,18 @@ render(srcDir, dstDir, context);
 
 ```TypeScript
 /**
- * Renders template files from srcDir to dstDir.
+ * Recursively renders template files in srcDir to dstDir.
  * Strips any *.hbs and *.handlebars extensions from source files.
  * Provides the ability to filter files in source directory.
  *
  * @param srcDir   source directory with template
  * @param dstDir   destination directory
  * @param context  The handlerbars context object
- * @param filter   (optional) function to filter files. Defaults to null - all files are processed. ({path: string, stats: fstats}) => boolean
+ * @param filter   (optional) function to filter files. Defaults to null - all files are processed.
+ *                 signature: ({path: string, stats: fstats}) => boolean
  * @param options  (optional) { handlebars: anHandlebarsInstance, hb_options: handlebar-options }
  */
-export const render = async (
+async function render (
   srcDir: string,
   dstDir: string,
   context: any,
