@@ -10,7 +10,8 @@
 [![NPM](https://nodei.co/npm/handlebars-dir-render.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/handlebars-dir-render/)
 <!-- endbadge -->
 
-Given a context and a source directory of handlebars templates, renders all files from source directory to destination directory.
+Given a context and a source directory of handlebars templates, recursively renders all files from source directory to destination directory.
+Strips and `*.hbs` & `*.handlebars` extensions from source directory.
 
 ## Installation
 
