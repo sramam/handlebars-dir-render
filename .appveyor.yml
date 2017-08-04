@@ -17,6 +17,8 @@ build_script:
   - node --version
   - npm --version
   - npm run precommit
+  - git status
+  - git diff
 
 # Post-install test scripts.
 # test_script:
