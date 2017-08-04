@@ -1,2 +1,13 @@
 
 * text eol=lf
+
+*.js   text
+*.d.ts text
+*.json text
+*.ts   text
+*.tsx  text
+*.svg  text
+*.md   text
+
+*.png  bin
+*.jpg  bin
