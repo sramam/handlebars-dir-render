@@ -318,13 +318,6 @@ cross-env@^5.0.3:
     cross-spawn "^5.1.0"
     is-windows "^1.0.0"
 
-cross-spawn@^4.0.0:
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-4.0.2.tgz#7b9247621c23adfdd3856004a823cbe397424d41"
-  dependencies:
-    lru-cache "^4.0.1"
-    which "^1.2.9"
-
 cross-spawn@^5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-5.1.0.tgz#e8bd0efee58fcff6f8f94510a0a554bbfa235449"
@@ -546,7 +539,7 @@ git-mods@^1.0.4:
     chalk "^1.1.3"
     shelljs "^0.7.4"
 
-glob@7.1.1:
+glob@7.1.1, glob@^7.0.0, glob@^7.0.5, glob@^7.1.1:
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.1.tgz#805211df04faaf1c63a3600306cdf5ade50b2ec8"
   dependencies:
@@ -564,17 +557,6 @@ glob@^5.0.15:
     inflight "^1.0.4"
     inherits "2"
     minimatch "2 || 3"
-    once "^1.3.0"
-    path-is-absolute "^1.0.0"
-
-glob@^7.0.0, glob@^7.0.5, glob@^7.1.1:
-  version "7.1.2"
-  resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.2.tgz#c19c9df9a028702d678612384a6552404c636d15"
-  dependencies:
-    fs.realpath "^1.0.0"
-    inflight "^1.0.4"
-    inherits "2"
-    minimatch "^3.0.4"
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
@@ -1178,13 +1160,13 @@ normalize-path@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/normalize-path/-/normalize-path-1.0.0.tgz#32d0e472f91ff345701c15a8311018d3b0a90379"
 
-npm-run-batch@0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/npm-run-batch/-/npm-run-batch-0.0.4.tgz#018694a9233e99afbab9f82672b1d49b1f4fa360"
+npm-run-batch@0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/npm-run-batch/-/npm-run-batch-0.0.6.tgz#adfa4261e58e8202484105e2194a869179fc5395"
   dependencies:
     bluebird "^3.4.3"
     commander "^2.9.0"
-    cross-spawn "^4.0.0"
+    cross-spawn "^5.1.0"
 
 npm-sh@^1.0.1:
   version "1.0.1"
