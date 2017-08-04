@@ -5,6 +5,7 @@ node_js:
   - '8'
 cache: yarn
 script:
+  - git config -l
   - npm run precommit
     # get the coverage metrics to coveralls
   - remap-istanbul -i coverage/typescript/coverage.json -o coverage/typescript/lcov.info -t lcovonly

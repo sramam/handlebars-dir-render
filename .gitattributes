@@ -1,5 +1,6 @@
 
-* text=lf
+# converts eol to platform specific
+* text=auto
 
 *.js    text
 *.d.ts  text
@@ -9,5 +10,5 @@
 *.svg   text
 *.md    text
 
-*.png   bin
-*.jpg   bin
+*.png   binary
+*.jpg   binary
