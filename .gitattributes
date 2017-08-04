@@ -1,0 +1,14 @@
+
+# converts eol to platform specific
+* text=auto
+
+*.js    text
+*.d.ts  text
+*.json  text
+*.ts    text
+*.tsx   text
+*.svg   text
+*.md    text
+
+*.png   binary
+*.jpg   binary

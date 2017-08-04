@@ -42,9 +42,10 @@
     "coverage:dist": "run-batch",
     "remap-html": "remap-istanbul -i coverage/coverage.json -o coverage/typescript -t html",
     "remap-json": "remap-istanbul -i coverage/coverage.json -o coverage/typescript/coverage.json -t json",
+    "remap-lcov": "remap-istanbul -i coverage/coverage.json -o coverage/typescript/lcov.info -t lcovonly",
     "coverage-report": "istanbul report --include=coverage/typescript/coverage.json text-summary",
     "check-coverage": "istanbul check-coverage --include coverage/typescript/coverage.json",
-    "test-with-cover": "istanbul cover ./node_modules/.bin/_mocha* -- --opts mocha.opts",
+    "test-with-cover": "istanbul cover ./node_modules/mocha/bin/_mocha -- --opts ./mocha.opts",
     "test-without-cover": "mocha --opts mocha.opts",
     "build": "npm-run-batch",
     "build:dist": "run-batch",
@@ -88,6 +89,7 @@
       "init:ts-cover",
       "remap-html",
       "remap-json",
+      "remap-lcov",
       "coverage-report"
     ],
     "coverage:dist": [
@@ -95,6 +97,7 @@
       "init:ts-cover",
       "remap-html",
       "remap-json",
+      "remap-lcov",
       "coverage-report",
       "check-coverage"
     ],
@@ -121,7 +124,7 @@
     "coveralls": "^2.12.0",
     "cross-env": "^5.0.3",
     "dir-compare": "^1.4.0",
-    "git-mods": "^1.0.4",
+    "git-mods": "^1.0.7",
     "graceful-fs": "^4.1.11",
     "husky": "^0.14.3",
     "istanbul": "^0.4.5",
@@ -141,6 +144,7 @@
     "typescript": "^2.2.1"
   },
   "dependencies": {
+    "handlebars": "^4.0.10",
     "klaw-sync": "^2.1.0",
     "lodash": "^4.17.4",
     "mkdirp": "^0.5.1",

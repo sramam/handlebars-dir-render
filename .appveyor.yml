@@ -12,12 +12,17 @@ install:
   - ps: Install-Product node $env:nodejs_version
   # install modules
   - appveyor-retry yarn install
-  - dir ./node_modules/.bin
 
 build_script:
   - node --version
   - npm --version
+  # do we really need this?
+  - git config core.autocrlf true
+  - git config core.safecrlf true
+  - git config -l
   - npm run precommit
+  - git status
+  - git diff
 
 # Post-install test scripts.
 # test_script:
