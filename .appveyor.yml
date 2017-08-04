@@ -16,6 +16,8 @@ install:
 build_script:
   - node --version
   - npm --version
+  # do we really need this?
+  - git config core.autocrlf input
   - npm run precommit
   - git status
   - git diff
