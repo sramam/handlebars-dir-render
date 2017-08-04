@@ -1,13 +1,13 @@
 
 * text eol=crlf
 
-*.js   text
-*.d.ts text
-*.json text
-*.ts   text
-*.tsx  text
-*.svg  text
-*.md   text
+*.js    text
+*.d.ts  text
+*.json  text
+*.ts    text
+*.tsx   text
+*.svg   text
+*.md    text
 
-*.png  bin
-*.jpg  bin
+*.png   bin
+*.jpg   bin
