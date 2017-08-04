@@ -5,6 +5,8 @@ node_js:
   - '8'
 cache: yarn
 script:
+  - git config core.safecrlf true
+  - git config core.autocrlf input
   - git config -l
   - npm run precommit
     # get the coverage metrics to coveralls
