@@ -141,6 +141,7 @@
     "typescript": "^2.2.1"
   },
   "dependencies": {
+    "handlebars": "^4.0.10",
     "klaw-sync": "^2.1.0",
     "lodash": "^4.17.4",
     "mkdirp": "^0.5.1",
