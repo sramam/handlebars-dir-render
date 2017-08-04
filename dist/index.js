@@ -43,3 +43,4 @@ exports.render = (srcDir, dstDir, context, filter = null, options = null) => __a
         }
     }));
 });
+//# sourceMappingURL=index.js.map
