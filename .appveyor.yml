@@ -17,7 +17,7 @@ build_script:
   - node --version
   - npm --version
   # do we really need this?
-  - git config core.autocrlf input
+  - git config core.autocrlf true
   - git config -l
   - npm run precommit
   - git status
