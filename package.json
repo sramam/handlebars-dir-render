@@ -146,7 +146,7 @@
     "chalk": "^2.0.1",
     "handlebars": "^4.0.10",
     "klaw-sync": "^2.1.0",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.21",
     "mkdirp": "^0.5.1",
     "parse-git-config": "^1.1.1",
     "runtime-engine-check": "^1.0.0",
